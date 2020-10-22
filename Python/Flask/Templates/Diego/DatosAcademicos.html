@@ -3,7 +3,7 @@
     <head>
         <title>Hoja de Vida</title>
         <meta charset="utf-8">
-        <link type="text/css" rel="stylesheet" href="estilos.css">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename ='estilos.css')}}">
     </head>
     <body >
         <div id = "contenido2">
@@ -13,10 +13,11 @@
                 </hgroup>
                 <nav>
                     <ul>
-                        <li><a href="Inicio.html">Inicio</a></li>
-                        <li><a href="DatosBasicos.html">Datos Basicos</a></li>
-                        <li><a href="DatosAcademicos.html">Datos Academicos</a></li>
-                        <li><a href="DatosTecnologicos.html">Datos tecnologicos</a></li>
+                        <li><a href="{{ url_for('Menu')}}">Principal</a></li>
+                        <li><a href="{{ url_for('Diego1')}}">Inicio</a></li>
+                        <li><a href="{{ url_for('Diego2')}}">Datos Basicos</a></li>
+                        <li><a href="{{ url_for('Diego3')}}">Datos Academicos</a></li>
+                        <li><a href="{{ url_for('Diego4')}}">Datos tecnologicos</a></li>
                     </ul>
                 </nav>
             </header>
