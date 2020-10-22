@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu de Hojas de Vida</title>
-</head>
-<body>
-    <div id = "contenido">
-        <header>
-            <hgroup>
-                <h1>Menu</h1>
-            </hgroup>
-            <nav>
+<html lang = "es">
+    <head>
+        <title>Hoja de Vida</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static',filename ='estilosM.css')}}">
+    </head>
+    <body>
+        <div id = "contenido">
+            <header>
+                <hgroup>
+                    <h1>Hoja de Vida</h1>
+                </hgroup>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('Menu')}}">Inicio</a></li>
+                        <li><a href="{{ url_for('Diego1')}}">Diego</a></li>
+                        <li><a href="{{ url_for('David1')}}">David</a></li>
+                        <li><a href="{{ url_for('Fabian1')}}">Fabian</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
                 <ul>
-                    <li><a href="{{ url_for('Menu')}}">Inicio</a></li>
-                    <li><a href="{{ url_for('Diego1')}}">Diego</a></li>
-                    <li><a href="{{ url_for('David1')}}">David</a></li>
-                    <li><a href="{{ url_for('Fabian1')}}">Fabian</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-    </div>
-    
-</body>
+                    <div  id = "textoPrincipal">
+                        <hgroup>
+                            <h1>Bienvenidos al menu principal de nuestro grupo</h1>
+                        </hgroup>
+                        <article>
+                            <p>
+                                Conformado por Diego Nicolas Ramos Zamudio, Fabian Enrique Leon Junco , HÉCTOR DAVID ALEJANDRO PACHECO MORA.
+                            </p>
+                        </article>
+                    </div>
+                </ul> 
+            </section>
+        </div>
+    </body>
 </html>
+
+
+

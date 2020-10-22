@@ -1,0 +1,40 @@
+body{
+    background-color: #e44f48;
+    font-family: "Roboto", sans-serif;
+    
+}
+#contenido
+{
+    width: 1000px;
+    margin:0 auto;
+    text-align: left;
+}
+h1{
+    color:#fff5fe
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color:  #fafafa;
+    cursor: pointer;
+}
+section ul div{
+    display: inline-block;
+    width: 10000px;
+    margin-right: 20px;
+}
+
+#textoPrincipal
+{
+    width: 500px;
+    height: 350px;
+    background-color: #1e1e1e;
+    color: #ffff;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+
+}
+a{
+    font-weight: bold;
+}
