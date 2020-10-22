@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <title>CV version pollito</title>
-        <link type="text/css" rel="stylesheet" href="estilos.css">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename ='estilo1.css')}}">
     </head>
     <body>
         <center><h1>Bienvenido usuario</h1></center>
@@ -10,7 +10,7 @@
             <tr>
                 <th class="resaltado">Nombre: </th>
                 <td>Fabian Enrique Leon Junco</td>
-                <td rowspan="2" colspan="2" style="background-color: #ffffff;"><img src="Yo.jpg" width="150me"></td>
+                <td rowspan="2" colspan="2" style="background-color: #ffffff;"><img src="{{ url_for('static',filename ='imgs/Yo.jpg')}}" width="150me"></td>
             </tr>
             <tr>
                 <th class="resaltado">Código:</th>
@@ -20,9 +20,10 @@
         <nav>
             <center><table style="background-color: azure; width: 100%;"></center>
                 <tr>
-                    <th>><a href="datosB.html">Datos básicos</a></th>
-                    <th><a href="datosA.html">Datos académicos</a></th>
-                    <th><a href="datosT.html">Datos tecnológicos</a></th>
+                    <th><a href="{{ url_for('Menu')}}">Principal</a></th>
+                    <th>><a href="{{ url_for('Fabian2')}}">Datos básicos</a></th>
+                    <th><a href="{{ url_for('Fabian3')}}">Datos académicos</a></th>
+                    <th><a href="{{ url_for('Fabian4')}}">Datos tecnológicos</a></th>
                 </tr>
             </table>
             

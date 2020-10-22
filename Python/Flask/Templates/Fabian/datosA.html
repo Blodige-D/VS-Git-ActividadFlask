@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <title>CV/DatosAcademicos</title>
-        <link type="text/css" rel="stylesheet" href="estilos.css">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename ='estilo1.css')}}">
     </head>
     <body>
         <center><h3> Datos Academicos </h3><table></center>
@@ -27,7 +27,7 @@
         <nav>
             <center><table style="background-color: azure; width: 100%;"></center>
                 <tr>
-                    <th>><a href="principal.html">Inicio</a></th>
+                    <th>><a href="{{ url_for('Fabian1')}}">Inicio</a></th>
                 </tr>
         </nav>
     </body>

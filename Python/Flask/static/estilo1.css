@@ -1,0 +1,47 @@
+body {
+    font-size: 1.5em;
+    background-color:#b3e4f5 ;
+}
+
+h1 {
+    color:red;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+section h1 {
+    color: #00ff00;
+}
+
+h3 {
+    color: brown;
+}
+
+
+th {
+    text-align: left;
+}
+
+nav {
+    margin: 1em;
+    padding: 2em;
+}
+
+nav th {
+    text-align: center;
+}
+
+table {
+    border: 1px solid #00aaff;
+}
+
+table th {
+    color: seagreen;
+}
+
+
+.resaltado {
+    background-color: #7fa9b8;
+    color: #ffffff;
+    font-weight: bold;
+}
